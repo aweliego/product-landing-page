@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(80, 24, 24);
   background: linear-gradient(
@@ -55,12 +59,7 @@ body {
 a {
   text-decoration: none;
   color: rgb(252, 252, 245);
-}
-
-a:hover {
-  color: gold;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 /* Navbar Responsive Styles */
@@ -158,6 +157,7 @@ a:hover {
 #features {
   width: 50%;
   margin: 0 auto;
+  padding-top: 130px;
   margin-bottom: 80px;
 }
 
@@ -196,7 +196,7 @@ a:hover {
 @media (max-width: 904px) {
   #features {
     width: 90%;
-    padding: 0 18px;
+    padding: 90px 18px;
   }
 }
 
@@ -224,7 +224,8 @@ a:hover {
 }
 
 #best-choices h2 {
-  margin: 20px 5px;
+  padding-top: 80px;
+  margin: 30px 5px;
   text-align: center;
 }
 
@@ -253,6 +254,12 @@ a:hover {
   .video-section {
     width: 80%;
   }
+
+  #best-choices h2 {
+    padding-top: 120px;
+    margin: 30px 5px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 581px) {
@@ -266,6 +273,7 @@ a:hover {
   width: 80%;
   max-height: auto;
   margin: 0 auto;
+  padding-top: 120px;
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
